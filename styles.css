@@ -273,6 +273,35 @@ p { line-height: 1.55; max-width: 62ch; }
 .case-card h3 { font-size: clamp(1.15rem, 1.6vw, 1.4rem); margin-bottom: 10px; line-height: 1.2; max-width: 24ch; }
 .case-card p { font-size: .92rem; color: var(--muted); line-height: 1.5; max-width: 50ch; }
 
+/* Apply form (careers page) */
+.apply-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+.apply-form { display: flex; flex-direction: column; gap: 18px; max-width: 540px; }
+.form-row { display: flex; flex-direction: column; gap: 8px; }
+.form-row label { font-size: .82rem; font-weight: 500; letter-spacing: -.005em; color: var(--ink); }
+.form-row input, .form-row textarea {
+  padding: 14px 16px;
+  border: 1px solid var(--line-strong);
+  background: #fff;
+  font: inherit;
+  font-size: .95rem;
+  color: var(--ink);
+  width: 100%;
+}
+.form-row input:focus, .form-row textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: -1px;
+}
+.form-row textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
+.apply-form button.btn { align-self: flex-start; margin-top: 4px; border: 0; }
+.form-note { font-size: .85rem; color: var(--muted); margin-top: 8px; line-height: 1.55; max-width: none; }
+.form-note a { color: var(--ink); border-bottom: 1px solid var(--ink); padding-bottom: 1px; transition: color 150ms, border-color 150ms; }
+.form-note a:hover { color: var(--blue); border-bottom-color: var(--blue); }
+
 /* Blog index */
 .post-row {
   display: grid;
@@ -457,6 +486,7 @@ p { line-height: 1.55; max-width: 62ch; }
   .proj-scale { text-align: left; }
   .case-cards { grid-template-columns: 1fr; }
   .post-row { grid-template-columns: 90px 1fr 30px; gap: 20px; }
+  .apply-grid { grid-template-columns: 1fr; gap: 32px; }
   .list-head { grid-template-columns: 1fr; gap: 16px; }
   .disc-row { grid-template-columns: 50px 1fr 30px; }
   .disc-desc { grid-column: 1 / -1; padding-top: 12px; max-width: none; }
