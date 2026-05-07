@@ -273,6 +273,37 @@ p { line-height: 1.55; max-width: 62ch; }
 .case-card h3 { font-size: clamp(1.15rem, 1.6vw, 1.4rem); margin-bottom: 10px; line-height: 1.2; max-width: 24ch; }
 .case-card p { font-size: .92rem; color: var(--muted); line-height: 1.5; max-width: 50ch; }
 
+/* Blog index */
+.post-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 60px;
+  gap: clamp(20px, 4vw, 64px);
+  padding: clamp(28px, 3vw, 40px) 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+  position: relative;
+  transition: padding 200ms ease;
+}
+.post-row:first-of-type { border-top: 1px solid var(--line-strong); }
+.post-row:hover { padding-left: 8px; }
+.post-row .post-date { font-size: .82rem; color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+.post-row .post-title { font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.1; transition: color 200ms; }
+.post-row:hover .post-title { color: var(--blue); }
+.post-row .post-arrow { font-size: 1.1rem; color: var(--muted); justify-self: end; transition: color 200ms, transform 200ms; }
+.post-row:hover .post-arrow { color: var(--blue); transform: translateX(6px); }
+
+/* Blog post layout */
+.post-body { padding: clamp(48px, 6vw, 80px) 0; }
+.post-body p { font-size: 1.1rem; line-height: 1.65; max-width: 64ch; margin-bottom: 1.2em; color: var(--ink); }
+.post-body h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 500; letter-spacing: -.02em; margin: 2em 0 .6em; max-width: 28ch; line-height: 1.15; }
+.post-body h2:first-child { margin-top: 0; }
+.post-body h3 { font-size: 1.2rem; font-weight: 500; margin: 1.6em 0 .4em; max-width: 36ch; }
+.post-body ul { padding-left: 1.2em; margin: 1em 0; }
+.post-body ul li { padding: 4px 0; font-size: 1.05rem; line-height: 1.6; color: var(--ink); }
+.post-body strong { font-weight: 500; color: var(--ink); }
+.post-body em { font-style: italic; }
+.post-byline { display: block; margin-top: 3em; padding-top: 1.6em; border-top: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
+
 /* Next case study link */
 .next-case {
   display: block;
@@ -425,6 +456,7 @@ p { line-height: 1.55; max-width: 62ch; }
   .proj-item { grid-template-columns: 1fr; gap: 4px; padding: 18px 0; }
   .proj-scale { text-align: left; }
   .case-cards { grid-template-columns: 1fr; }
+  .post-row { grid-template-columns: 90px 1fr 30px; gap: 20px; }
   .list-head { grid-template-columns: 1fr; gap: 16px; }
   .disc-row { grid-template-columns: 50px 1fr 30px; }
   .disc-desc { grid-column: 1 / -1; padding-top: 12px; max-width: none; }
