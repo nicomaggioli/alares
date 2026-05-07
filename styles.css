@@ -280,23 +280,27 @@ p { line-height: 1.55; max-width: 62ch; }
   gap: clamp(40px, 6vw, 96px);
   align-items: start;
 }
-.apply-form { display: flex; flex-direction: column; gap: 18px; max-width: 540px; }
-.form-row { display: flex; flex-direction: column; gap: 8px; }
-.form-row label { font-size: .82rem; font-weight: 500; letter-spacing: -.005em; color: var(--ink); }
-.form-row input, .form-row textarea {
+.apply-form { display: flex; flex-direction: column; gap: 18px; max-width: 540px; width: 100%; }
+.apply-form .form-row { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+.apply-form .form-row label { display: block; font-size: .82rem; font-weight: 500; letter-spacing: -.005em; color: var(--ink); }
+.apply-form .form-row input,
+.apply-form .form-row textarea {
+  display: block;
+  width: 100%;
   padding: 14px 16px;
   border: 1px solid var(--line-strong);
   background: #fff;
   font: inherit;
   font-size: .95rem;
   color: var(--ink);
-  width: 100%;
+  box-sizing: border-box;
 }
-.form-row input:focus, .form-row textarea:focus {
+.apply-form .form-row input:focus,
+.apply-form .form-row textarea:focus {
   outline: 2px solid var(--blue);
   outline-offset: -1px;
 }
-.form-row textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
+.apply-form .form-row textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
 .apply-form button.btn { align-self: flex-start; margin-top: 4px; border: 0; }
 .form-note { font-size: .85rem; color: var(--muted); margin-top: 8px; line-height: 1.55; max-width: none; }
 .form-note a { color: var(--ink); border-bottom: 1px solid var(--ink); padding-bottom: 1px; transition: color 150ms, border-color 150ms; }
@@ -313,7 +317,6 @@ p { line-height: 1.55; max-width: 62ch; }
   position: relative;
   transition: padding 200ms ease;
 }
-.post-row:first-of-type { border-top: 1px solid var(--line-strong); }
 .post-row:hover { padding-left: 8px; }
 .post-row .post-date { font-size: .82rem; color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
 .post-row .post-title { font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.1; transition: color 200ms; }
