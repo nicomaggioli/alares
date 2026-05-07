@@ -74,7 +74,7 @@ p { line-height: 1.55; max-width: 62ch; }
   padding: 20px var(--gutter);
 }
 .head-brand { display: flex; align-items: center; line-height: 0; }
-.head-brand img { height: 44px; width: auto; display: block; }
+.head-brand img { height: 44px; width: auto; display: block; mix-blend-mode: multiply; }
 .head-nav {
   display: flex;
   gap: clamp(20px, 3vw, 40px);
