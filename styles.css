@@ -273,6 +273,27 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .case-card h3 { font-size: clamp(1.15rem, 1.6vw, 1.4rem); margin-bottom: 10px; line-height: 1.2; max-width: 24ch; }
 .case-card p { font-size: .92rem; color: var(--muted); line-height: 1.5; max-width: 50ch; }
 
+/* Selected clients strip */
+.section-clients { padding: clamp(48px, 6vw, 80px) 0; }
+.clients-head {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line-strong);
+  margin-bottom: 32px;
+}
+.clients-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px clamp(20px, 3vw, 56px);
+  align-items: baseline;
+}
+.clients-row > div {
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-weight: 500;
+  letter-spacing: -.012em;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
 /* Apply form (careers page) */
 .apply-grid {
   display: grid;

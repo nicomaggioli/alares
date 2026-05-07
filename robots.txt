@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nicomaggioli.github.io/alares/sitemap.xml
