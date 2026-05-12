@@ -273,6 +273,14 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .case-card h3 { font-size: clamp(1.15rem, 1.6vw, 1.4rem); margin-bottom: 10px; line-height: 1.2; max-width: 24ch; }
 .case-card p { font-size: .92rem; color: var(--muted); line-height: 1.5; max-width: 50ch; }
 
+/* Firm-section wing mark */
+.firm-mark {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
+
 /* Selected clients strip */
 .section-clients { padding: clamp(48px, 6vw, 80px) 0; }
 .clients-head {
