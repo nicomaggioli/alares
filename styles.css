@@ -276,9 +276,10 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 /* Firm-section wing mark */
 .firm-mark {
   width: 100%;
-  max-width: 240px;
+  max-width: 380px;
   height: auto;
   display: block;
+  margin-top: 8px;
 }
 
 /* Selected clients strip */
