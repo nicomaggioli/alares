@@ -142,11 +142,95 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
   color: var(--muted);
   margin-bottom: 36px;
 }
-.opening-img img {
+.opening-img > img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
+}
+
+/* Hero slideshow (CSS-only, radio-button paged) */
+.slideshow { position: relative; }
+.slideshow .slide-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+.slide-stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  pointer-events: none;
+  margin: 0;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.slide figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 20px 24px 18px;
+  background: linear-gradient(to top, rgba(10,10,10,.88), rgba(10,10,10,.4) 70%, transparent);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.slide figcaption .label {
+  color: rgba(255,255,255,.65);
+  font-size: .7rem;
+}
+.slide figcaption p {
+  font-size: .92rem;
+  line-height: 1.4;
+  color: #fff;
+  max-width: 48ch;
+}
+#hs1:checked ~ .slide-stage .slide:nth-child(1),
+#hs2:checked ~ .slide-stage .slide:nth-child(2),
+#hs3:checked ~ .slide-stage .slide:nth-child(3),
+#hs4:checked ~ .slide-stage .slide:nth-child(4),
+#hs5:checked ~ .slide-stage .slide:nth-child(5) { opacity: 1; }
+
+.slide-nav {
+  display: flex;
+  margin-top: 12px;
+  border-top: 1px solid var(--line-strong);
+}
+.slide-nav label {
+  flex: 1;
+  padding: 14px 4px;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--faint);
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+  transition: color 200ms, box-shadow 200ms;
+}
+.slide-nav label:last-child { border-right: 0; }
+.slide-nav label:hover { color: var(--ink); }
+#hs1:checked ~ .slide-nav label[for="hs1"],
+#hs2:checked ~ .slide-nav label[for="hs2"],
+#hs3:checked ~ .slide-nav label[for="hs3"],
+#hs4:checked ~ .slide-nav label[for="hs4"],
+#hs5:checked ~ .slide-nav label[for="hs5"] {
+  color: var(--ink);
+  box-shadow: inset 0 -2px 0 var(--red);
 }
 .opening-meta {
   display: grid;

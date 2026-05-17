@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alares — Architects &amp; Engineers</title>
-<meta name="description" content="Alares is an architecture and engineering practice founded in 2007. Healthcare, commercial, federal and institutional projects across the United States. Offices in Sarasota, FL and Quincy, MA.">
+<title>Alares — Healthcare Architects &amp; Engineers</title>
+<meta name="description" content="Alares is a healthcare architecture and engineering practice founded in 2007. MRI suites, oncology renovations, dental clinics and campus utility plants for VA, federal and private healthcare clients. Offices in Sarasota, FL and Quincy, MA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/jpeg" href="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:64">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Alares — Architects &amp; Engineers">
-<meta property="og:description" content="An architecture and engineering firm working on healthcare, federal and commercial projects since 2007. Offices in Sarasota, FL and Quincy, MA.">
-<meta property="og:image" content="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Flag-atrium-scaled.jpg/:/rs=w:1200,h:630">
+<meta property="og:title" content="Alares — Healthcare Architects &amp; Engineers">
+<meta property="og:description" content="A healthcare architecture and engineering firm working on MRI suites, oncology renovations, dental clinics and campus utility plants since 2007. Offices in Sarasota, FL and Quincy, MA.">
+<meta property="og:image" content="https://nicomaggioli.github.io/alares/assets/hero/01-hospital-corridor.jpg">
 <meta property="og:url" content="https://nicomaggioli.github.io/alares/">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -44,15 +44,66 @@
     <div class="frame">
       <div class="opening-grid">
         <div class="opening-text">
-          <h1>Architecture defined by engineering.</h1>
-          <p class="lead">Born from the Green Beret ethos, Alares translates elite military precision into mission-critical architecture. We navigate complex engineering through high-stakes leadership and absolute technical rigor.</p>
+          <h1>Healthcare architecture and engineering.</h1>
+          <p class="lead">MRI suites, oncology renovations, dental clinics, campus utility plants. Designing the spaces and systems that keep healthcare running — since 2007.</p>
           <div class="btn-row">
             <a href="#contact" class="btn">Start a project →</a>
             <a href="#work" class="btn btn-ghost">See selected work</a>
           </div>
         </div>
-        <div class="opening-img">
-          <img src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Flag-atrium-scaled.jpg/:/rs=w:1600,h:1200" alt="Federal facility atrium with American flag">
+
+        <div class="opening-img slideshow">
+          <input type="radio" name="hero-slide" id="hs1" class="slide-radio" checked>
+          <input type="radio" name="hero-slide" id="hs2" class="slide-radio">
+          <input type="radio" name="hero-slide" id="hs3" class="slide-radio">
+          <input type="radio" name="hero-slide" id="hs4" class="slide-radio">
+          <input type="radio" name="hero-slide" id="hs5" class="slide-radio">
+
+          <div class="slide-stage">
+            <figure class="slide">
+              <img src="assets/hero/01-hospital-corridor.jpg" alt="Hospital corridor with wood-paneled reception desk">
+              <figcaption>
+                <span class="label">01 / Outpatient clinic — reception</span>
+                <p>Interior fit-out of a hospital reception and corridor.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/hero/02-dental-clinic-entry.jpg" alt="Dental clinic entry vestibule with wood paneling">
+              <figcaption>
+                <span class="label">02 / VA Dental Clinic — entry</span>
+                <p>Vestibule and waiting area for a federal dental clinic.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/hero/03-dental-treatment.jpg" alt="Dental treatment room with operating microscope">
+              <figcaption>
+                <span class="label">03 / VA Dental Clinic — treatment</span>
+                <p>Treatment suite with surgical microscope for endodontic procedures.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/hero/04-dental-check-in.jpg" alt="Dental clinic check-in counter with blue-lit signage">
+              <figcaption>
+                <span class="label">04 / VA Dental Clinic — check-in</span>
+                <p>Reception and intake station with custom millwork and signage.</p>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/hero/05-mep-air-handler.jpg" alt="Air handling unit installation in a mechanical room">
+              <figcaption>
+                <span class="label">05 / Mechanical — air handler</span>
+                <p>Air handler installation with seismic-braced piping and controls.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="slide-nav">
+            <label for="hs1"><span>01</span></label>
+            <label for="hs2"><span>02</span></label>
+            <label for="hs3"><span>03</span></label>
+            <label for="hs4"><span>04</span></label>
+            <label for="hs5"><span>05</span></label>
+          </div>
         </div>
       </div>
 
@@ -351,6 +402,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  const radios = document.querySelectorAll('input[name="hero-slide"]');
+  if (radios.length < 2) return;
+  setInterval(() => {
+    const i = [...radios].findIndex(r => r.checked);
+    radios[(i + 1) % radios.length].checked = true;
+  }, 5500);
+})();
+</script>
 
 </body>
 </html>
