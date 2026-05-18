@@ -366,25 +366,39 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
   margin-top: 8px;
 }
 
-/* Selected clients strip */
+/* Selected clients strip — scrolling logo marquee */
 .section-clients { padding: clamp(48px, 6vw, 80px) 0; }
 .clients-head {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--line-strong);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
-.clients-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px clamp(20px, 3vw, 56px);
-  align-items: baseline;
+.clients-marquee {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
-.clients-row > div {
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  font-weight: 500;
-  letter-spacing: -.012em;
-  color: var(--ink);
-  line-height: 1.2;
+.clients-track {
+  display: flex;
+  gap: clamp(48px, 5vw, 96px);
+  align-items: center;
+  width: max-content;
+  animation: clients-scroll 32s linear infinite;
+}
+.clients-track img {
+  height: 80px;
+  width: auto;
+  flex: 0 0 auto;
+  filter: grayscale(1);
+  opacity: .55;
+  transition: opacity 200ms, filter 200ms;
+}
+.clients-track img:hover { filter: grayscale(0); opacity: 1; }
+.clients-marquee:hover .clients-track { animation-play-state: paused; }
+@keyframes clients-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-25%); }
 }
 
 /* Apply form (careers page) */
