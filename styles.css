@@ -671,3 +671,20 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
   .disc-row { grid-template-columns: 1fr; gap: 6px; padding: 24px 0; }
   .disc-arrow { display: none; }
 }
+
+
+/* Past-performance portfolio */
+.proj-controls { display:flex; flex-wrap:wrap; gap:8px; padding-top: clamp(28px,3vw,2.25rem); }
+.proj-chip { font:inherit; font-size:.8rem; letter-spacing:.01em; padding:7px 15px; border:1px solid var(--line); background:transparent; color:var(--muted); cursor:pointer; border-radius:999px; transition:background 150ms,color 150ms,border-color 150ms; }
+.proj-chip:hover { border-color:var(--ink); color:var(--ink); }
+.proj-chip.is-active { background:var(--ink); border-color:var(--ink); color:#fff; }
+.proj-count { font-size:.82rem; color:var(--faint); margin-top:1.1rem; }
+.proj-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:1.25rem; }
+.proj-card { background:var(--bg); padding:1.5rem 1.5rem 1.625rem; display:flex; flex-direction:column; gap:.45rem; }
+.proj-card .label { color:var(--blue); margin:0; }
+.proj-card h3 { font-size:1.02rem; line-height:1.25; margin:0; }
+.proj-card .proj-meta { font-size:.8rem; color:var(--faint); }
+.proj-card p { font-size:.875rem; color:var(--muted); line-height:1.5; margin:.15rem 0 0; }
+.proj-card[hidden] { display:none; }
+@media (max-width:980px){ .proj-grid{ grid-template-columns:repeat(2,1fr);} }
+@media (max-width:620px){ .proj-grid{ grid-template-columns:1fr;} }
