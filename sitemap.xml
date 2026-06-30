@@ -1,163 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nicomaggioli.github.io/alares/</loc>
+    <loc>https://alaresengineering.com/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/architecture/</loc>
+    <loc>https://alaresengineering.com/architecture/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/healthcare-design-that-ages-well/</loc>
+    <loc>https://alaresengineering.com/blog/healthcare-design-that-ages-well/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/hidden-roi-of-an-energy-audit/</loc>
+    <loc>https://alaresengineering.com/blog/hidden-roi-of-an-energy-audit/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://alaresengineering.com/blog/</loc>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/nepa-in-plain-english/</loc>
+    <loc>https://alaresengineering.com/blog/manchester-steam-tunnel/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alaresengineering.com/blog/newington-chp-commissioning/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alaresengineering.com/blog/reno-geothermal-feasibility/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alaresengineering.com/blog/retrocommissioning-visn-1/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://alaresengineering.com/blog/nepa-in-plain-english/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/net-zero-on-a-federal-budget/</loc>
+    <loc>https://alaresengineering.com/blog/net-zero-on-a-federal-budget/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/owners-rep-vs-construction-manager/</loc>
+    <loc>https://alaresengineering.com/blog/owners-rep-vs-construction-manager/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/seismic-upgrades-on-aging-boiler-plants/</loc>
+    <loc>https://alaresengineering.com/blog/seismic-upgrades-on-aging-boiler-plants/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/why-3d-revit-on-every-mep-retrofit/</loc>
+    <loc>https://alaresengineering.com/blog/why-3d-revit-on-every-mep-retrofit/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/blog/why-commissioning-pays-for-itself/</loc>
+    <loc>https://alaresengineering.com/blog/why-commissioning-pays-for-itself/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/capabilities/</loc>
+    <loc>https://alaresengineering.com/capabilities/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/careers/</loc>
+    <loc>https://alaresengineering.com/careers/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-albany/</loc>
+    <loc>https://alaresengineering.com/case-albany/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-bedford/</loc>
+    <loc>https://alaresengineering.com/case-bedford/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-east-orange/</loc>
+    <loc>https://alaresengineering.com/case-east-orange/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-manchester/</loc>
+    <loc>https://alaresengineering.com/case-manchester/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-moakley/</loc>
+    <loc>https://alaresengineering.com/case-moakley/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-reno/</loc>
+    <loc>https://alaresengineering.com/case-reno/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/case-studies/</loc>
+    <loc>https://alaresengineering.com/case-studies/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/commissioning/</loc>
+    <loc>https://alaresengineering.com/commissioning/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/construction-owners-rep/</loc>
+    <loc>https://alaresengineering.com/construction-owners-rep/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/environmental/</loc>
+    <loc>https://alaresengineering.com/environmental/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/mep-services/</loc>
+    <loc>https://alaresengineering.com/mep-services/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/people/</loc>
+    <loc>https://alaresengineering.com/people/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/structural/</loc>
+    <loc>https://alaresengineering.com/structural/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nicomaggioli.github.io/alares/sustainability/</loc>
+    <loc>https://alaresengineering.com/sustainability/</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
