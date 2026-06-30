@@ -4,7 +4,7 @@
   --bg: #fafafa;
   --ink: #0a0a0a;
   --muted: #666;
-  --faint: #a8a8a8;
+  --faint: #6f6f6f;
   --line: #e5e5e5;
   --line-strong: #0a0a0a;
   --blue: #1d75b8;
@@ -688,3 +688,9 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .proj-card[hidden] { display:none; }
 @media (max-width:980px){ .proj-grid{ grid-template-columns:repeat(2,1fr);} }
 @media (max-width:620px){ .proj-grid{ grid-template-columns:1fr;} }
+
+/* Accessibility — visible keyboard focus (mouse clicks unaffected) */
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
