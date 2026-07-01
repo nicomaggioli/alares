@@ -421,7 +421,7 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
   display: block;
   width: 100%;
   padding: .875rem 1rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   background: transparent;
   font: inherit;
   font-size: .95rem;
