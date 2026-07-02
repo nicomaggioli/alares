@@ -147,28 +147,28 @@
               </figcaption>
             </figure>
             <figure class="slide">
-              <img decoding="async" src="assets/hero/02-dental-clinic-entry.jpg" alt="Dental clinic entry vestibule with wood paneling">
+              <img decoding="async" fetchpriority="low" src="assets/hero/02-dental-clinic-entry.jpg" alt="Dental clinic entry vestibule with wood paneling">
               <figcaption>
                 <span class="label">02 / VA Dental Clinic / entry</span>
                 <p>Vestibule and waiting area for a federal dental clinic.</p>
               </figcaption>
             </figure>
             <figure class="slide">
-              <img decoding="async" src="assets/hero/03-dental-treatment.jpg" alt="Dental treatment room with operating microscope">
+              <img decoding="async" fetchpriority="low" src="assets/hero/03-dental-treatment.jpg" alt="Dental treatment room with operating microscope">
               <figcaption>
                 <span class="label">03 / VA Dental Clinic / treatment</span>
                 <p>Treatment suite with surgical microscope for endodontic procedures.</p>
               </figcaption>
             </figure>
             <figure class="slide">
-              <img decoding="async" src="assets/hero/04-dental-check-in.jpg" alt="Dental clinic check-in counter with blue-lit signage">
+              <img decoding="async" fetchpriority="low" src="assets/hero/04-dental-check-in.jpg" alt="Dental clinic check-in counter with blue-lit signage">
               <figcaption>
                 <span class="label">04 / VA Dental Clinic / check-in</span>
                 <p>Reception and intake station with custom millwork and signage.</p>
               </figcaption>
             </figure>
             <figure class="slide">
-              <img decoding="async" src="assets/hero/05-mep-air-handler.jpg" alt="Air handling unit installation in a mechanical room">
+              <img decoding="async" fetchpriority="low" src="assets/hero/05-mep-air-handler.jpg" alt="Air handling unit installation in a mechanical room">
               <figcaption>
                 <span class="label">05 / Mechanical / air handler</span>
                 <p>Air handler installation with seismic-braced piping and controls.</p>
@@ -547,6 +547,17 @@
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     error.hidden = true;
+    const defaultError = error.dataset.default || (error.dataset.default = error.textContent);
+    error.textContent = defaultError;
+    const files = form.querySelector('input[type="file"]');
+    if (files && files.files.length) {
+      const total = [...files.files].reduce((n, f) => n + f.size, 0);
+      if (total > 10 * 1024 * 1024) {
+        error.textContent = 'Attachments are ' + (total / 1048576).toFixed(1) + ' MB, over the 10 MB total limit. Please remove or shrink a file and try again.';
+        error.hidden = false;
+        return;
+      }
+    }
     const button = form.querySelector('button[type="submit"]');
     const originalText = button.textContent;
     button.disabled = true;
