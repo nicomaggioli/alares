@@ -1,5 +1,13 @@
 /* Alares — modern engineering / clean sans */
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('assets/fonts/inter-latin.woff2') format('woff2');
+}
+
 :root {
   --bg: #fafafa;
   --ink: #0a0a0a;
@@ -694,3 +702,19 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
   outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
+
+/* Portfolio search */
+.proj-search { padding-top: clamp(28px,3vw,2.25rem); }
+.proj-search-input {
+  width: 100%;
+  max-width: 32rem;
+  font: inherit;
+  font-size: .95rem;
+  padding: .8rem 1rem;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+}
+.proj-search-input::placeholder { color: var(--faint); }
+.proj-search-input:focus { outline: 2px solid var(--blue); outline-offset: -1px; }
+.proj-controls { padding-top: 1rem; }

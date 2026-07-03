@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case Studies | Alares</title>
 <meta name="description" content="Selected projects from Alares: VA hospital boiler replacements, seismic upgrades, courthouse renovations, fire alarm modernization, steam pipe systems and geothermal feasibility.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../styles.css">
 <link rel="icon" type="image/svg+xml" href="../assets/logos/alares-wing.svg">
 <meta property="og:type" content="website">
@@ -118,6 +116,10 @@
         <h2>The broader portfolio.</h2>
       </div>
       <p class="lead" style="max-width:60ch;margin-top:1rem">A deeper sample of 86 projects delivered for the VA, GSA and other federal and institutional clients, across MEP, structural, commissioning, construction management and environmental work. Filter by discipline.</p>
+
+      <div class="proj-search">
+        <input type="search" id="proj-search-input" class="proj-search-input" placeholder="Search projects — try &quot;chiller&quot;, &quot;fire alarm&quot;, &quot;Reno&quot;, &quot;seismic&quot;" aria-label="Search projects by keyword, location or client" autocomplete="off">
+      </div>
 
       <div class="proj-controls">
         <button class="proj-chip is-active" data-filter="all">All</button>
@@ -654,24 +656,37 @@
   <script>
   (function(){
     var chips=document.querySelectorAll('.proj-chip'),
-        cards=document.querySelectorAll('.proj-card'),
-        count=document.querySelector('.proj-count');
-    function apply(f){
+        count=document.querySelector('.proj-count'),
+        search=document.getElementById('proj-search-input'),
+        items=[].map.call(document.querySelectorAll('.proj-card'),function(c){
+          return {el:c, disc:c.getAttribute('data-disc'), text:(c.textContent||'').toLowerCase()};
+        });
+    var activeDisc='all', query='';
+    function apply(){
       var n=0;
-      cards.forEach(function(c){
-        var show=(f==='all'||c.getAttribute('data-disc')===f);
-        c.hidden=!show; if(show)n++;
+      items.forEach(function(it){
+        var okDisc=(activeDisc==='all'||it.disc===activeDisc);
+        var okText=(!query||it.text.indexOf(query)!==-1);
+        var show=okDisc&&okText;
+        it.el.hidden=!show; if(show)n++;
       });
-      count.textContent=n+' project'+(n===1?'':'s')+(f==='all'?'':' shown');
+      var filtered=(activeDisc!=='all'||query);
+      count.textContent = n===0
+        ? 'No projects match'+(query?' “'+query+'”':'')+'. Try another term or clear the search.'
+        : n+' project'+(n===1?'':'s')+(filtered?' shown':'');
     }
     chips.forEach(function(ch){
       ch.addEventListener('click',function(){
         chips.forEach(function(x){x.classList.remove('is-active');});
         ch.classList.add('is-active');
-        apply(ch.getAttribute('data-filter'));
+        activeDisc=ch.getAttribute('data-filter');
+        apply();
       });
     });
-    apply('all');
+    if(search){
+      search.addEventListener('input',function(){ query=search.value.trim().toLowerCase(); apply(); });
+    }
+    apply();
   })();
   </script>
 
