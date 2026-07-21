@@ -759,3 +759,12 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .post-card:hover h3 { color: var(--blue); }
 .post-card p { font-size: .9375rem; line-height: 1.55; color: var(--muted); max-width: 52ch; }
 @media (max-width: 760px) { .post-grid { grid-template-columns: 1fr; } }
+
+/* Blog post — "From the project" gallery */
+.post-gallery { margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.post-gallery > .label { display: block; margin-bottom: 1.25rem; }
+.post-gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.post-gallery-img { position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: var(--line); }
+.post-gallery-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-gallery figcaption { font-size: .78rem; color: var(--muted); margin-top: .45rem; }
+@media (max-width: 620px) { .post-gallery-grid { grid-template-columns: 1fr; } }
