@@ -718,3 +718,44 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .proj-search-input::placeholder { color: var(--faint); }
 .proj-search-input:focus { outline: 2px solid var(--blue); outline-offset: -1px; }
 .proj-controls { padding-top: 1rem; }
+
+/* Blog index — card grid (image, headline, text underneath) */
+.post-group-head { padding-bottom: 1.25rem; border-bottom: 1px solid var(--line-strong); }
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 4.5vw, 3.5rem) clamp(24px, 2.6vw, 2.5rem);
+  padding-top: clamp(32px, 3.5vw, 3rem);
+}
+.post-card { display: block; }
+.post-card-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--blue);
+  margin-bottom: 1.125rem;
+}
+.post-card-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 200ms ease, transform 500ms ease;
+}
+.post-card:hover .post-card-img img { opacity: .92; transform: scale(1.02); }
+.post-card .post-card-date { display: block; margin-bottom: .5rem; }
+.post-card h3 {
+  font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.15;
+  margin-bottom: .625rem;
+  max-width: 26ch;
+  transition: color 200ms ease;
+}
+.post-card:hover h3 { color: var(--blue); }
+.post-card p { font-size: .9375rem; line-height: 1.55; color: var(--muted); max-width: 52ch; }
+@media (max-width: 760px) { .post-grid { grid-template-columns: 1fr; } }
