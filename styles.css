@@ -768,3 +768,8 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .post-gallery-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .post-gallery figcaption { font-size: .78rem; color: var(--muted); margin-top: .45rem; }
 @media (max-width: 620px) { .post-gallery-grid { grid-template-columns: 1fr; } }
+
+/* 3-up gallery variant (capabilities post) */
+.post-gallery-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .post-gallery-grid-3 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .post-gallery-grid-3 { grid-template-columns: 1fr; } }
