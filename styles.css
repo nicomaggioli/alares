@@ -753,7 +753,8 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
   letter-spacing: -.025em;
   line-height: 1.15;
   margin-bottom: .625rem;
-  max-width: 26ch;
+  max-width: none;
+  text-wrap: pretty;
   transition: color 200ms ease;
 }
 .post-card:hover h3 { color: var(--blue); }
