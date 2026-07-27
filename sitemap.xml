@@ -26,9 +26,15 @@
   </url>
   <url>
     <loc>https://alaresengineering.com/blog/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alaresengineering.com/blog/asheville-chilled-water-replacement/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://alaresengineering.com/blog/eight-disciplines-one-team/</loc>
