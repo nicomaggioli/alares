@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Careers | Alares</title>
 <meta name="description" content="Join our team of architects and engineers. We work on healthcare, federal and commercial projects across the United States. Send your resume to careers@alaresengineering.com.">
-<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../styles.css">
 <link rel="icon" type="image/svg+xml" href="../assets/logos/alares-wing.svg">
 <meta property="og:type" content="website">
@@ -15,28 +15,29 @@
 <meta property="og:url" content="https://alaresengineering.com/careers/">
 <link rel="canonical" href="https://alaresengineering.com/careers/">
 <meta name="twitter:card" content="summary_large_image">
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <header class="head">
   <div class="head-row">
     <a href="../" class="head-brand">
-      <img decoding="async" src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:160" alt="Alares Architects &amp; Engineers">
+      <img decoding="async" src="../assets/logos/alares-wordmark.jpg" alt="Alares Architects &amp; Engineers" width="816" height="160">
     </a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb" aria-hidden="true">
-    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
-    <nav class="head-nav">
+    <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav" hidden><span></span><span></span><span></span></button>
+    <nav class="head-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="../#disciplines">Disciplines</a>
       <a href="../#work">Work</a>
       <a href="../#firm">Firm</a>
       <a href="../blog/">Insights</a>
       <a href="./" class="is-active">Careers</a>
-      <a href="../#contact">Contact</a>
+      <a href="../#contact" class="nav-cta">Start a project <span aria-hidden="true">→</span></a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
   <section class="opening">
     <div class="frame">
@@ -82,22 +83,22 @@
         <form class="apply-form" action="mailto:careers@alaresengineering.com" method="post" enctype="text/plain">
           <div class="form-row">
             <label for="name">Name</label>
-            <input id="name" name="Name" type="text" required>
+            <input id="name" name="Name" type="text" required autocomplete="name">
           </div>
           <div class="form-row">
             <label for="email">Email</label>
-            <input id="email" name="Email" type="email" required>
+            <input id="email" name="Email" type="email" required autocomplete="email">
           </div>
           <div class="form-row">
             <label for="phone">Phone</label>
-            <input id="phone" name="Phone" type="tel">
+            <input id="phone" name="Phone" type="tel" autocomplete="tel">
           </div>
           <div class="form-row">
             <label for="message">Tell us about yourself</label>
             <textarea id="message" name="Message" rows="5"></textarea>
           </div>
-          <button type="submit" class="btn">Send →</button>
-          <p class="form-note">Or email your resume directly to <a href="mailto:careers@alaresengineering.com">careers@alaresengineering.com</a> with attachment.</p>
+          <button type="submit" class="btn">Open email draft →</button>
+          <p class="form-note">This opens your email app. Attach your resume before sending, or email it directly to <a href="mailto:careers@alaresengineering.com">careers@alaresengineering.com</a>.</p>
         </form>
       </div>
     </div>
@@ -157,7 +158,7 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2025 Alares Architects &amp; Engineers</span>
+      <span>© 2026 Alares Architects &amp; Engineers</span>
       <span>All Rights Reserved</span>
     </div>
   </div>

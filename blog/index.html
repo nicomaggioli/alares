@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insights | Alares</title>
 <meta name="description" content="Notes from the field on healthcare, federal and commercial engineering, commissioning, sustainability, structural and more.">
-<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../styles.css">
 <link rel="icon" type="image/svg+xml" href="../assets/logos/alares-wing.svg">
 <meta property="og:type" content="website">
@@ -28,33 +28,34 @@
     "name": "Alares",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:160"
+      "url": "https://alaresengineering.com/assets/logos/alares-wordmark.jpg"
     }
   }
 }
 </script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <header class="head">
   <div class="head-row">
     <a href="../" class="head-brand">
-      <img decoding="async" src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:160" alt="Alares Architects &amp; Engineers">
+      <img decoding="async" src="../assets/logos/alares-wordmark.jpg" alt="Alares Architects &amp; Engineers" width="816" height="160">
     </a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb" aria-hidden="true">
-    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
-    <nav class="head-nav">
+    <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav" hidden><span></span><span></span><span></span></button>
+    <nav class="head-nav" id="primary-nav" aria-label="Primary navigation">
       <a href="../#disciplines">Disciplines</a>
       <a href="../#work">Work</a>
       <a href="../#firm">Firm</a>
       <a href="./" class="is-active">Insights</a>
       <a href="../careers/">Careers</a>
-      <a href="../#contact">Contact</a>
+      <a href="../#contact" class="nav-cta">Start a project <span aria-hidden="true">→</span></a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
   <section class="opening">
     <div class="frame">
@@ -72,7 +73,7 @@
       <div class="post-grid">
         <a href="derby-line-chilled-water/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/derby-tower.jpg" alt="Illustration of the Derby Line Port of Entry border station">
+            <picture><source type="image/webp" srcset="../assets/projects/derby-tower-640.webp 640w, ../assets/projects/derby-tower-1254.webp 1254w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/derby-tower.jpg" alt="Illustration of the Derby Line Port of Entry border station" width="1254" height="940"></picture>
           </div>
           <span class="label post-card-date">September 8, 2026</span>
           <h3>Other firms could not fix it. We did</h3>
@@ -80,7 +81,7 @@
         </a>
         <a href="dallas-cooling-tower-replacement/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/dallas-towers.jpg" alt="New pre-packaged cooling towers and header piping at the Dallas VA Medical Center">
+            <picture><source type="image/webp" srcset="../assets/projects/dallas-towers-640.webp 640w, ../assets/projects/dallas-towers-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/dallas-towers.jpg" alt="New pre-packaged cooling towers and header piping at the Dallas VA Medical Center" width="1600" height="1200"></picture>
           </div>
           <span class="label post-card-date">September 1, 2026</span>
           <h3>Four old cooling towers out. Six new ones in</h3>
@@ -88,7 +89,7 @@
         </a>
         <a href="va-national-cemetery-due-diligence/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/national-cemetery-1.jpg" alt="Headstones in a national cemetery">
+            <picture><source type="image/webp" srcset="../assets/projects/national-cemetery-1-640.webp 640w, ../assets/projects/national-cemetery-1-934.webp 934w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/national-cemetery-1.jpg" alt="Headstones in a national cemetery" width="934" height="701"></picture>
           </div>
           <span class="label post-card-date">August 25, 2026</span>
           <h3>Before the VA buys land, we check it</h3>
@@ -96,7 +97,7 @@
         </a>
         <a href="brockton-mental-health-renovation/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/hospital-corridor-2.jpg" alt="Illustrative photo of an occupied hospital ward corridor">
+            <picture><source type="image/webp" srcset="../assets/projects/hospital-corridor-2-640.webp 640w, ../assets/projects/hospital-corridor-2-1500.webp 1500w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/hospital-corridor-2.jpg" alt="Illustrative photo of an occupied hospital ward corridor" width="1500" height="1125"></picture>
           </div>
           <span class="label post-card-date">August 18, 2026</span>
           <h3>We renovated a mental health ward around the patients</h3>
@@ -104,7 +105,7 @@
         </a>
         <a href="big-spring-window-replacement/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/bigspring-exterior.jpg" alt="Illustrative photo of a masonry hospital building facade with replacement windows">
+            <picture><source type="image/webp" srcset="../assets/projects/bigspring-exterior-640.webp 640w, ../assets/projects/bigspring-exterior-793.webp 793w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/bigspring-exterior.jpg" alt="Illustrative photo of a masonry hospital building facade with replacement windows" width="793" height="595"></picture>
           </div>
           <span class="label post-card-date">August 11, 2026</span>
           <h3>We replaced every window in the hospital</h3>
@@ -112,7 +113,7 @@
         </a>
         <a href="bedford-fire-alarm-upgrades/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/fire-protection-1.jpg" alt="Bank of red fire sprinkler risers and zone valves at a VA campus">
+            <picture><source type="image/webp" srcset="../assets/projects/fire-protection-1-640.webp 640w, ../assets/projects/fire-protection-1-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/fire-protection-1.jpg" alt="Bank of red fire sprinkler risers and zone valves at a VA campus" width="1600" height="1200"></picture>
           </div>
           <span class="label post-card-date">August 4, 2026</span>
           <h3>Fire alarm upgrades across 27 buildings</h3>
@@ -120,7 +121,7 @@
         </a>
         <a href="asheville-chilled-water-replacement/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/chilled-water-1.jpg" alt="Labeled chilled water supply and return piping in the Asheville VA Medical Center mechanical plant">
+            <picture><source type="image/webp" srcset="../assets/projects/chilled-water-1-640.webp 640w, ../assets/projects/chilled-water-1-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/chilled-water-1.jpg" alt="Labeled chilled water supply and return piping in the Asheville VA Medical Center mechanical plant" width="1600" height="1200"></picture>
           </div>
           <span class="label post-card-date">July 28, 2026</span>
           <h3>10,000 feet of chilled water pipe, replaced live</h3>
@@ -128,7 +129,7 @@
         </a>
         <a href="albany-boiler-plant-replacement/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/albany-1.jpg" alt="High-pressure steam boilers inside the VA Albany central boiler plant">
+            <picture><source type="image/webp" srcset="../assets/projects/albany-1-640.webp 640w, ../assets/projects/albany-1-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/albany-1.jpg" alt="High-pressure steam boilers inside the VA Albany central boiler plant" width="1600" height="1200"></picture>
           </div>
           <span class="label post-card-date">July 21, 2026</span>
           <h3>A 1940s boiler plant, brought into 2026</h3>
@@ -137,7 +138,7 @@
 
         <a href="manchester-steam-tunnel/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/manchester%20steam.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1600,cg:true" alt="Manchester VAMC steam distribution piping">
+            <picture><source type="image/webp" srcset="../assets/media/manchester-vamc-steam-distribution-piping-640.webp 640w, ../assets/media/manchester-vamc-steam-distribution-piping-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/media/manchester-vamc-steam-distribution-piping.jpg" alt="Manchester VAMC steam distribution piping" width="1600" height="1019"></picture>
           </div>
           <span class="label post-card-date">June 24, 2026</span>
           <h3>Inside the Manchester steam tunnel</h3>
@@ -146,7 +147,7 @@
 
         <a href="newington-chp-commissioning/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/ahu%20cx.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1600,cg:true" alt="Mechanical systems commissioning">
+            <picture><source type="image/webp" srcset="../assets/media/air-handler-commissioning-640.webp 640w, ../assets/media/air-handler-commissioning-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/media/air-handler-commissioning.jpg" alt="Mechanical systems commissioning" width="1600" height="1201"></picture>
           </div>
           <span class="label post-card-date">June 17, 2026</span>
           <h3>The plant that fought itself</h3>
@@ -155,7 +156,7 @@
 
         <a href="reno-geothermal-feasibility/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1549193308-7c895560f8e2?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Geothermal steam venting from arid terrain">
+            <picture><source type="image/webp" srcset="../assets/media/geothermal-steam-venting-from-arid-terrain-640.webp 640w, ../assets/media/geothermal-steam-venting-from-arid-terrain-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/media/geothermal-steam-venting-from-arid-terrain.jpg" alt="Geothermal steam venting from arid terrain" width="1600" height="1067"></picture>
           </div>
           <span class="label post-card-date">June 10, 2026</span>
           <h3>Drilling 2,200 feet to prove geothermal</h3>
@@ -164,7 +165,7 @@
 
         <a href="retrocommissioning-visn-1/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1615309662243-70f6df917b59?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Mechanical ductwork and HVAC distribution">
+            <picture><source type="image/webp" srcset="../assets/media/mechanical-ductwork-and-hvac-distribution-640.webp 640w, ../assets/media/mechanical-ductwork-and-hvac-distribution-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/media/mechanical-ductwork-and-hvac-distribution.jpg" alt="Mechanical ductwork and HVAC distribution" width="1600" height="1190"></picture>
           </div>
           <span class="label post-card-date">June 3, 2026</span>
           <h3>Retrocommissioning 11 VA campuses</h3>
@@ -176,7 +177,7 @@
       <div class="post-grid">
         <a href="eight-rulebooks-va-hospital/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/va-standards-plant.jpg" alt="Illustration of a hospital central plant mechanical room with labeled piping and equipment cabinets">
+            <picture><source type="image/webp" srcset="../assets/projects/va-standards-plant-640.webp 640w, ../assets/projects/va-standards-plant-1024.webp 1024w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/va-standards-plant.jpg" alt="Illustration of a hospital central plant mechanical room with labeled piping and equipment cabinets" width="1024" height="768"></picture>
           </div>
           <span class="label post-card-date">September 10, 2026</span>
           <h3>One hospital. Eight rulebooks</h3>
@@ -185,7 +186,7 @@
 
         <a href="we-work-for-the-people-who-served/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/alares-team-photo.jpg" alt="The Alares team">
+            <picture><source type="image/webp" srcset="../assets/projects/alares-team-photo-640.webp 640w, ../assets/projects/alares-team-photo-1460.webp 1460w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/alares-team-photo.jpg" alt="The Alares team" width="1460" height="1095"></picture>
           </div>
           <span class="label post-card-date">September 3, 2026</span>
           <h3>We work for the people who served</h3>
@@ -194,7 +195,7 @@
 
         <a href="three-layers-one-wing/" class="post-card">
           <div class="post-card-img" style="background:#f2f4f7">
-            <img loading="lazy" decoding="async" src="../assets/logos/emblem-color.svg" alt="The Alares emblem: a wing drawn in three stacked layers of blue" style="object-fit:contain;padding:14%">
+            <img loading="lazy" decoding="async" src="../assets/logos/emblem-color.svg" alt="The Alares emblem: a wing drawn in three stacked layers of blue" style="object-fit:contain;padding:14%" width="709" height="525">
           </div>
           <span class="label post-card-date">August 27, 2026</span>
           <h3>Three layers. One wing</h3>
@@ -203,7 +204,7 @@
 
         <a href="why-3d-revit-on-every-mep-retrofit/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/albany-3.jpg" alt="Existing plant piping and equipment documented before design at the VA Albany boiler plant">
+            <picture><source type="image/webp" srcset="../assets/projects/albany-3-640.webp 640w, ../assets/projects/albany-3-1000.webp 1000w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/albany-3.jpg" alt="Existing plant piping and equipment documented before design at the VA Albany boiler plant" width="1000" height="1500"></picture>
           </div>
           <span class="label post-card-date">August 20, 2026</span>
           <h3>We measure first. Then we design</h3>
@@ -213,7 +214,7 @@
 
         <a href="seismic-upgrades-on-aging-boiler-plants/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/eastorange-3.jpg" alt="Illustration of structural steel bracing and seismically supported piping in a central plant">
+            <picture><source type="image/webp" srcset="../assets/projects/eastorange-3-640.webp 640w, ../assets/projects/eastorange-3-1365.webp 1365w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/eastorange-3.jpg" alt="Illustration of structural steel bracing and seismically supported piping in a central plant" width="1365" height="1024"></picture>
           </div>
           <span class="label post-card-date">August 13, 2026</span>
           <h3>The boiler plant has to survive an earthquake</h3>
@@ -222,7 +223,7 @@
 
         <a href="net-zero-on-a-federal-budget/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/houston-solar-3.jpg" alt="Aerial view of rooftop solar panels on a VA campus building">
+            <picture><source type="image/webp" srcset="../assets/projects/houston-solar-3-640.webp 640w, ../assets/projects/houston-solar-3-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/houston-solar-3.jpg" alt="Aerial view of rooftop solar panels on a VA campus building" width="1600" height="1200"></picture>
           </div>
           <span class="label post-card-date">August 6, 2026</span>
           <h3>What net zero actually means on a federal campus</h3>
@@ -231,7 +232,7 @@
 
         <a href="hidden-roi-of-an-energy-audit/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/cap-mep.jpg" alt="Mechanical plant equipment and distribution serving a VA healthcare campus">
+            <picture><source type="image/webp" srcset="../assets/projects/cap-mep-640.webp 640w, ../assets/projects/cap-mep-1000.webp 1000w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/cap-mep.jpg" alt="Mechanical plant equipment and distribution serving a VA healthcare campus" width="1000" height="750"></picture>
           </div>
           <span class="label post-card-date">July 30, 2026</span>
           <h3>Your building is probably wasting 15% of its energy</h3>
@@ -240,7 +241,7 @@
 
         <a href="eight-disciplines-one-team/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/alares-team-photo.jpg" alt="The Alares team">
+            <picture><source type="image/webp" srcset="../assets/projects/alares-team-photo-640.webp 640w, ../assets/projects/alares-team-photo-1460.webp 1460w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/alares-team-photo.jpg" alt="The Alares team" width="1460" height="1095"></picture>
           </div>
           <span class="label post-card-date">July 23, 2026</span>
           <h3>Eight disciplines, one accountable team</h3>
@@ -250,7 +251,7 @@
 
         <a href="why-commissioning-pays-for-itself/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/cap-commissioning.jpg" alt="Engineer performing functional testing in the field">
+            <picture><source type="image/webp" srcset="../assets/projects/cap-commissioning-640.webp 640w, ../assets/projects/cap-commissioning-1000.webp 1000w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/cap-commissioning.jpg" alt="Engineer performing functional testing in the field" width="1000" height="750"></picture>
           </div>
           <span class="label post-card-date">May 7, 2026</span>
           <h3>Commissioning is not a formality</h3>
@@ -259,7 +260,7 @@
 
         <a href="nepa-in-plain-english/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1633295686973-6ce4b697ebab?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Wetland and marsh landscape">
+            <picture><source type="image/webp" srcset="../assets/media/wetland-and-marsh-landscape-640.webp 640w, ../assets/media/wetland-and-marsh-landscape-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/media/wetland-and-marsh-landscape.jpg" alt="Wetland and marsh landscape" width="1600" height="1067"></picture>
           </div>
           <span class="label post-card-date">April 16, 2026</span>
           <h3>NEPA in plain English</h3>
@@ -269,7 +270,7 @@
 
         <a href="owners-rep-vs-construction-manager/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="../assets/projects/owners-rep-meeting.jpg" alt="Owner&#x27;s representative reviewing progress with the project team on site">
+            <picture><source type="image/webp" srcset="../assets/projects/owners-rep-meeting-640.webp 640w, ../assets/projects/owners-rep-meeting-1424.webp 1424w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/projects/owners-rep-meeting.jpg" alt="Owner&#x27;s representative reviewing progress with the project team on site" width="1424" height="1068"></picture>
           </div>
           <span class="label post-card-date">April 9, 2026</span>
           <h3>Who is protecting your side of the build?</h3>
@@ -278,7 +279,7 @@
 
         <a href="healthcare-design-that-ages-well/" class="post-card">
           <div class="post-card-img">
-            <img loading="lazy" decoding="async" src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/dental.JPG/:/rs=w:1600,cg:true,m" alt="Healthcare clinical space">
+            <picture><source type="image/webp" srcset="../assets/media/healthcare-interior-640.webp 640w, ../assets/media/healthcare-interior-1600.webp 1600w" sizes="(max-width: 880px) calc(100vw - 40px), (max-width: 1440px) 45vw, 50vw"><img loading="lazy" decoding="async" src="../assets/media/healthcare-interior.jpg" alt="Healthcare clinical space" width="1600" height="1067"></picture>
           </div>
           <span class="label post-card-date">April 2, 2026</span>
           <h3>Healthcare design that ages well</h3>
@@ -344,7 +345,7 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2025 Alares Architects &amp; Engineers</span>
+      <span>© 2026 Alares Architects &amp; Engineers</span>
       <span>All Rights Reserved</span>
     </div>
   </div>
