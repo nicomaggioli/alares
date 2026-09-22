@@ -1,16 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKNBPL1GZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PKNBPL1GZB');
+</script>
+<script src="/assets/analytics-events.js" defer></script>
 <meta charset="utf-8">
+<meta name="google-site-verification" content="lOEvKE2qhJiGT0phtB3np79fp3xxJPFZnUlJrfP5UOk">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alares | Healthcare Architects &amp; Engineers</title>
-<meta name="description" content="Alares is a healthcare architecture and engineering practice founded in 2007. MRI suites, oncology renovations, dental clinics and campus utility plants for VA, federal and private healthcare clients. Offices in Sarasota, FL and Quincy, MA.">
+<meta name="description" content="Alares is a healthcare architecture and engineering practice founded in 2007. MRI suites, oncology renovations, dental clinics and campus utility plants for VA, federal and private healthcare clients. Headquartered in Sarasota, FL, serving clients nationwide.">
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/svg+xml" href="assets/logos/alares-wing.svg">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Alares | Healthcare Architects &amp; Engineers">
-<meta property="og:description" content="A healthcare architecture and engineering firm working on MRI suites, oncology renovations, dental clinics and campus utility plants since 2007. Offices in Sarasota, FL and Quincy, MA.">
+<meta property="og:description" content="A healthcare architecture and engineering firm working on MRI suites, oncology renovations, dental clinics and campus utility plants since 2007. Headquartered in Sarasota, FL, serving clients nationwide.">
 <meta property="og:image" content="https://alaresengineering.com/assets/hero/01-hospital-corridor.jpg">
 <meta property="og:url" content="https://alaresengineering.com/">
 <link rel="canonical" href="https://alaresengineering.com/">
@@ -45,19 +55,10 @@
     {
       "@type": "PostalAddress",
       "name": "Headquarters",
-      "streetAddress": "1990 Main St Downtown, Suite 750",
+      "streetAddress": "1990 Main St, Suite 750",
       "addressLocality": "Sarasota",
       "addressRegion": "FL",
       "postalCode": "34236",
-      "addressCountry": "US"
-    },
-    {
-      "@type": "PostalAddress",
-      "name": "Boston Office",
-      "streetAddress": "248 Copeland Street",
-      "addressLocality": "Quincy",
-      "addressRegion": "MA",
-      "postalCode": "02169",
       "addressCountry": "US"
     }
   ],
@@ -66,12 +67,6 @@
       "@type": "ContactPoint",
       "telephone": "+1-941-444-0477",
       "contactType": "sales",
-      "areaServed": "US"
-    },
-    {
-      "@type": "ContactPoint",
-      "telephone": "+1-617-481-6390",
-      "contactType": "customer service",
       "areaServed": "US"
     }
   ]
@@ -190,8 +185,8 @@
           <p>2007</p>
         </div>
         <div class="opening-meta-item">
-          <span class="label">Offices</span>
-          <p>Sarasota, FL<br>Quincy, MA</p>
+          <span class="label">Headquarters</span>
+          <p>Sarasota, FL</p>
         </div>
         <div class="opening-meta-item">
           <span class="label">Sectors</span>
@@ -465,18 +460,13 @@
           </form>
 
           <p id="contact-success" hidden style="margin-top: 32px; padding: 20px 24px; background: var(--ink); color: #fff; max-width: 540px;">Thanks. We'll be in touch shortly.</p>
-          <p id="contact-error" hidden style="margin-top: 16px; color: var(--red); max-width: 540px;">Something went wrong sending your message. Please try again or call one of our offices.</p>
+          <p id="contact-error" hidden style="margin-top: 16px; color: var(--red); max-width: 540px;">Something went wrong sending your message. Please try again or call our Sarasota office.</p>
         </div>
         <div class="locations">
           <div class="location">
             <span class="label">Headquarters</span>
-            <p>1990 Main St Downtown,<br>Suite 750<br>Sarasota, FL 34236</p>
+            <p>1990 Main St,<br>Suite 750<br>Sarasota, FL 34236</p>
             <a href="tel:9414440477">941.444.0477</a>
-          </div>
-          <div class="location">
-            <span class="label">Boston Office</span>
-            <p>248 Copeland Street<br>Quincy, MA 02169</p>
-            <a href="tel:6174816390">617.481.6390</a>
           </div>
         </div>
       </div>
@@ -511,13 +501,8 @@
       </div>
       <div class="foot-col">
         <h4>Sarasota, FL</h4>
-        <p>1990 Main St Downtown,<br>Suite 750<br>Sarasota, FL 34236</p>
+        <p>1990 Main St,<br>Suite 750<br>Sarasota, FL 34236</p>
         <a href="tel:9414440477">941.444.0477</a>
-      </div>
-      <div class="foot-col">
-        <h4>Quincy, MA</h4>
-        <p>248 Copeland Street<br>Quincy, MA 02169</p>
-        <a href="tel:6174816390">617.481.6390</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -562,7 +547,11 @@
     button.textContent = 'Sending...';
     try {
       const res = await fetch(form.action, { method: 'POST', body: new FormData(form) });
-      if (res.ok) {
+      const result = await res.json();
+      if (res.ok && result.success === true) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { form_id: 'contact-form', lead_type: 'project_inquiry' });
+        }
         form.reset();
         form.hidden = true;
         success.hidden = false;
