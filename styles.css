@@ -369,6 +369,9 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .case-card .label { display: block; margin-bottom: 6px; }
 .case-card h3 { font-size: clamp(1.15rem, 1.6vw, 1.4rem); margin-bottom: 10px; line-height: 1.2; max-width: 24ch; }
 .case-card p { font-size: .92rem; color: var(--muted); line-height: 1.5; max-width: 50ch; }
+.case-card-summary { grid-column: 1 / -1; padding: clamp(24px, 3vw, 2.5rem); border-top: 2px solid var(--blue); background: #edf4f9; }
+.case-card-summary h3, .case-card-summary p { max-width: 64ch; }
+.case-card-summary .case-link { display: inline-block; margin-top: 1rem; color: var(--blue-dark); text-decoration: underline; text-underline-offset: .2em; }
 
 /* Firm-section wing mark */
 .firm-mark {
@@ -501,6 +504,8 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .case-meta-item p { font-size: 1rem; color: var(--ink); line-height: 1.4; max-width: none; }
 
 /* Prose body extensions for service / case copy */
+.prose-body h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 500; letter-spacing: -.02em; margin: 2em 0 .6em; max-width: 32ch; line-height: 1.15; }
+.prose-body h2:first-child { margin-top: 0; }
 .prose-body h3 { font-size: clamp(1.25rem, 1.8vw, 1.6rem); font-weight: 500; letter-spacing: -.02em; margin: 2em 0 .6em; max-width: 32ch; line-height: 1.15; }
 .prose-body h3:first-child { margin-top: 0; }
 .prose-body h4 { font-size: 1rem; font-weight: 500; margin: 1.6em 0 .4em; }
@@ -508,6 +513,8 @@ p { line-height: 1.55; max-width: 62ch; text-wrap: pretty; }
 .prose-body ul li { padding: .625rem 0; border-top: 1px solid var(--line); font-size: .95rem; color: var(--muted); line-height: 1.5; }
 .prose-body ul li:last-child { border-bottom: 1px solid var(--line); }
 .prose-body strong { color: var(--ink); font-weight: 500; }
+.post-body a:not(.btn), .prose-body a:not(.btn), .row-body a:not(.btn), .proj-card p a { color: var(--blue-dark); text-decoration: underline; text-underline-offset: .2em; }
+.post-body a:not(.btn):hover, .prose-body a:not(.btn):hover, .row-body a:not(.btn):hover, .proj-card p a:hover { color: var(--red-dark); }
 
 /* Mission */
 .prose-grid {
