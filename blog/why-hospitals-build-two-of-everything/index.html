@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKNBPL1GZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PKNBPL1GZB');
+</script>
+<script src="/assets/analytics-events.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why hospitals build two of everything | Alares</title>
+<meta name="description" content="Redundancy, N+1, and why a hospital is designed to keep working when something breaks.">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" type="image/svg+xml" href="../../assets/logos/alares-wing.svg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why hospitals build two of everything | Alares">
+<meta property="og:description" content="Redundancy, N+1, and why a hospital is designed to keep working when something breaks.">
+<meta property="og:image" content="https://alaresengineering.com/assets/projects/why-hospitals-build-two-of-everything.jpg">
+<meta property="og:url" content="https://alaresengineering.com/blog/why-hospitals-build-two-of-everything/">
+<link rel="canonical" href="https://alaresengineering.com/blog/why-hospitals-build-two-of-everything/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why hospitals build two of everything",
+  "description": "Redundancy, N+1, and why a hospital is designed to keep working when something breaks.",
+  "image": "https://alaresengineering.com/assets/projects/why-hospitals-build-two-of-everything.jpg",
+  "datePublished": "2026-10-28",
+  "dateModified": "2026-10-28",
+  "author": {
+    "@type": "Organization",
+    "name": "Alares",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:160"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Alares",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:160"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://alaresengineering.com/blog/why-hospitals-build-two-of-everything/"
+  },
+  "url": "https://alaresengineering.com/blog/why-hospitals-build-two-of-everything/",
+  "articleSection": "Insights",
+  "inLanguage": "en-US"
+}
+</script>
+</head>
+<body>
+
+<header class="head">
+  <div class="head-row">
+    <a href="../../" class="head-brand">
+      <img decoding="async" src="https://img1.wsimg.com/isteam/ip/c089105e-5fb1-4bbf-9450-c3d20a04f63b/Alares%20Logo%20rev%2010-23-19%20v1.jpg/:/rs=h:160" alt="Alares Architects &amp; Engineers">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <nav class="head-nav">
+      <a href="../../#disciplines">Disciplines</a>
+      <a href="../../#work">Work</a>
+      <a href="../../#firm">Firm</a>
+      <a href="../" class="is-active">Insights</a>
+      <a href="../../careers/">Careers</a>
+      <a href="../../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="opening">
+    <div class="frame">
+      <div class="opening-grid">
+        <div class="opening-text">
+          <span class="label" style="display:block;margin-bottom:24px">Insight · October 28, 2026</span>
+          <h1>Why hospitals build two of everything.</h1>
+          <p class="lead">In most buildings, a broken chiller means a hot afternoon and an annoyed tenant. In a hospital it means operating rooms, imaging and pharmacy losing the conditions they depend on. That difference is why hospital systems are designed around redundancy, and why it shows up in almost every project we do.</p>
+          <div class="btn-row">
+            <a href="../" class="btn btn-ghost">← All insights</a>
+          </div>
+        </div>
+        <div class="opening-img">
+          <img decoding="async" fetchpriority="high" src="../../assets/projects/why-hospitals-build-two-of-everything.jpg" alt="Blue Alares graphic reading: Why hospitals build two of everything.">
+        </div>
+      </div>
+
+      <div class="opening-meta">
+        <div class="opening-meta-item"><span class="label">Topic</span><p>Healthcare engineering</p></div>
+        <div class="opening-meta-item"><span class="label">Audience</span><p>Facility managers · Owners</p></div>
+        <div class="opening-meta-item"><span class="label">Published</span><p>October 28, 2026</p></div>
+        <div class="opening-meta-item"><span class="label">Read time</span><p>3 minutes</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="frame">
+      <div class="prose-grid">
+        <aside class="prose-side"><span class="label">Article</span></aside>
+        <div class="post-body">
+
+          <h2>The idea</h2>
+          <p>Equipment fails. Chillers trip, pumps wear out, boilers need maintenance, the utility grid goes down in a storm. A hospital cannot choose when those things happen, and it cannot close while they are fixed. So the systems are designed to keep working with a piece missing.</p>
+
+          <h2>What N+1 means</h2>
+          <p>The common term is N+1. N is the amount of equipment needed to carry the full load. The plus one is a spare. If the cooling load needs two chillers, an N+1 plant has three, so any one of them can be out of service and the building still gets what it needs.</p>
+          <p>Some systems go further, with full duplicate capacity or separate paths. The right level depends on what the system serves and what happens if it stops.</p>
+
+          <h2>Where it shows up</h2>
+
+          <h3>Cooling</h3>
+          <p>At the Manchester VA we designed a fully redundant chilled water system for the main medical center, so one chiller can fail without the building losing cooling.</p>
+
+          <h3>Power</h3>
+          <p>Hospitals carry emergency generators that pick up critical loads when utility power drops. At Albany, the boiler plant work added a new backup generator so the plant that supplies the campus steam keeps running through an outage.</p>
+
+          <h3>Heat and steam</h3>
+          <p>Central plants are usually built with more boiler capacity than the peak load, so a boiler can be taken down for service in the middle of winter without the campus going cold.</p>
+
+          <h2>The cost of it</h2>
+          <p>Redundancy costs more up front. More equipment, more space, more piping and controls. The return is that maintenance can happen on schedule instead of in a panic, and a failure becomes a work order instead of an emergency.</p>
+
+          <h2>The point</h2>
+          <p>Equipment will fail eventually. The hospital should not. Designing for that from the start is what lets nobody inside notice when it happens.</p>
+
+          <span class="post-byline">Alares · October 28, 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="frame">
+      <div class="contact">
+        <div class="contact-h">
+          <h2>How much redundancy does your plant need?</h2>
+          <p>Redundant chilled water, steam and emergency power design for hospitals and federal facilities that have to keep running.</p>
+          <div class="btn-row" style="margin-top:24px"><a href="../../#contact" class="btn">Get in touch →</a></div>
+        </div>
+        <div class="locations">
+          <div class="location"><span class="label">Headquarters</span><p>1990 Main St,<br>Suite 750<br>Sarasota, FL 34236</p><a href="tel:9414440477">941.444.0477</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="frame">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand-name">Alares</div>
+        <p class="foot-brand-sub">Architects, engineers and commissioning agents working on healthcare, federal and commercial projects across the United States since 2007.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Disciplines</h4>
+        <a href="../../architecture/">Architecture</a>
+        <a href="../../mep-services/">MEP</a>
+        <a href="../../structural/">Structural &amp; Seismic</a>
+        <a href="../../construction-owners-rep/">Owner's Rep</a>
+        <a href="../../commissioning/">Commissioning</a>
+        <a href="../../sustainability/">Sustainability</a>
+        <a href="../../environmental/">Environmental</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="../../people/">People</a>
+        <a href="../../careers/">Careers</a>
+        <a href="../../capabilities/">Capabilities</a>
+        <a href="../../blog/">Insights</a>
+      </div>
+      <div class="foot-col">
+        <h4>Sarasota, FL</h4>
+        <p>1990 Main St,<br>Suite 750<br>Sarasota, FL 34236</p>
+        <a href="tel:9414440477">941.444.0477</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Alares Architects &amp; Engineers</span>
+      <span>All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
